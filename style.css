@@ -168,16 +168,39 @@
   animation: spin 1s  linear infinite;
 }
 
-@keyframes spinquasi {
+/*undici*/
+
+@keyframes spinquasi{
   0% {
-    transform: rotate(-270);
+    transform: rotate(0deg);
   }
-  75%{
-    transform: rotate();
+  90%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(0deg)
   }
 }
 
-
 .undici:hover{
-  animation: spinquasi 1s linear;
+  animation: spinquasi 2s linear;
+}
+
+/*dodici*/
+
+@keyframes dxsxtop{
+  0%{
+    left: 10%;
+  }
+  50%{
+    left: 90%;
+  }
+  100%{
+    left: 10%;
+  }
+}
+
+ex-12-button:hover .ex-12-top-white{
+  text-decoration: underline;
+  animation: dxsxtop 2s linear;
 }
